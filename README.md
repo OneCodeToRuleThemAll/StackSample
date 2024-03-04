@@ -1,4 +1,4 @@
-*StackSample Project*
+**StackSample Project**
 
 This project includes notebooks for exploratory data analysis, feature engineering, and model training. It also explores a large language model (LLM) approach.
 Project Structure
@@ -9,6 +9,8 @@ Project Structure
 LLM Approach
 
 The Large Language Model approach is currently available exclusively on Kaggle, as local resources did not include GPU access.
+
+**Docker image**
 
 Getting Started
 
@@ -29,9 +31,13 @@ git clone https://github.com/OneCodeToRuleThemAll/StackSample
 ```
 cd StackSample
 ```
-3. Build the Docker image from the Dockerfile included in the project:
-
+3. Build the Docker image from the Dockerfile included in the project
 ```
 docker build -t stacksample:v1 -f Dockerfile .
 ```
 This command builds a Docker image named stacksample:v1 based on the instructions in the Dockerfile.
+
+**Kaggle**
+1. Import the notebook in your kaggle notebook environment.
+2. Use a GPU in your runtime.
+3. Have uploaded a sample train/val/test df to run the script.
